@@ -10,8 +10,8 @@ class ArtisanMakeServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                cmanish049\ArtisanMake\Console\Commands\MakeTrait::class,
-                cmanish049\ArtisanMake\Console\Commands\MakeService::class,
+                \cmanish049\ArtisanMake\Console\Commands\MakeTrait::class,
+                \cmanish049\ArtisanMake\Console\Commands\MakeService::class,
             ]);
         }
     }
