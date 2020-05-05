@@ -1,0 +1,28 @@
+{
+    "name": "cmanish049/artisan-make",
+    "description": "This package creates traits, services scaffolding using artisan command",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cmanish049",
+            "email": "cmanish049@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "cmanish049\\ArtisanMake\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "cmanish049\\ArtisanMake\\ArtisanMakeServiceProvider"
+            ]
+        }
+    }
+}
