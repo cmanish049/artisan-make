@@ -2,6 +2,8 @@
 
 namespace cmanish049\ArtisanMake;
 
+use cmanish049\ArtisanMake\Console\Commands\MakeTrait;
+use cmanish049\ArtisanMake\Console\Commands\MakeService;
 use Illuminate\Support\ServiceProvider;
 
 class ArtisanMakeServiceProvider extends ServiceProvider
@@ -10,8 +12,8 @@ class ArtisanMakeServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \cmanish049\ArtisanMake\Console\Commands\MakeTrait::class,
-                \cmanish049\ArtisanMake\Console\Commands\MakeService::class,
+                MakeTrait::class,
+                MakeService::class,
             ]);
         }
     }
