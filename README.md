@@ -1,5 +1,5 @@
 # Artisan Make
-This package creates traits, services scaffolding using artisan command.
+This package creates trait and service scaffolding using artisan command.
 ## Installation
 You'll have to follow a couple of simple steps to install this package.
 ```bash
